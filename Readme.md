@@ -1,6 +1,6 @@
-# Employee Management System (EMS) 🚀
+# Employee Management System (EMS) 
 
-## 🎯 Project Overview
+##  Project Overview
 **Employee Management System (EMS)** is a comprehensive HR management solution built with **MERN Stack** (MongoDB, Express.js, React.js, Node.js). It automates all core HR functions including employee management, attendance tracking, payroll processing, leave management, and analytics.
 
 ### Key Objectives
@@ -81,83 +81,3 @@ Employee-Management-System/
 └── package.json
 ```
 
-## 🚀 Quick Start
-
-### Prerequisites
-- Node.js (v18+)
-- MongoDB (local or Atlas)
-- npm/yarn
-
-### Backend Setup
-```bash
-cd Backend
-npm install
-cp .env.example .env
-# Update .env with MongoDB URI, JWT_SECRET
-npm run dev
-```
-**Backend runs on**: `http://localhost:5000`
-
-### Frontend Setup
-```bash
-cd Frontend
-npm install
-npm start
-```
-**Frontend runs on**: `http://localhost:3000`
-
-### Environment Variables
-Create `.env` files:
-
-**Backend (.env)**:
-```
-MONGO_URI=mongodb://localhost:27017/ems
-JWT_SECRET=your-super-secret-key
-PORT=5000
-NODE_ENV=development
-```
-
-## 📖 API Endpoints
-
-| Method | Endpoint | Description | Auth |
-|--------|----------|-------------|------|
-| POST | `/api/auth/login` | User login | No |
-| GET | `/api/employees` | Get all employees | Admin |
-| POST | `/api/employees` | Create employee | Admin |
-| POST | `/api/attendance/checkin` | Check-in | Employee |
-| GET | `/api/payroll` | Get payroll | Admin/Employee |
-| POST | `/api/leaves` | Request leave | Employee |
-
-## 🧪 Testing
-```bash
-# Backend tests
-cd Backend && npm test
-
-# Frontend tests
-cd Frontend && npm test
-```
-
-## 📊 Database Schemas
-- **User**: name, email, role, password
-- **Employee**: personal info, department, salary, position
-- **Attendance**: employeeId, checkIn, checkOut, status
-- **Payroll**: employeeId, month, amount, status
-- **Leave**: employeeId, type, dates, status
-
-## 🤝 Contributing
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open Pull Request
-
-## 📄 License
-This project is licensed under MIT License.
-
-## 👨‍💼 Team
-- **Mahad Nur Sharif** (C1220617)
-- **Abdirahman Afrah Hassan** (C1220199)
-
----
-
-**Built with ❤️ for modern HR management!**
